@@ -1,0 +1,76 @@
+{
+  "posts": [
+    {
+      "id": "1",
+      "password": "Qwerty123?",
+      "age": 36,
+      "name": "Dunlap",
+      "email": "dunlaphubbard@cedward.com"
+    },
+    {
+      "id": "2",
+      "password": "Qwerty13?",
+      "age": 12,
+      "name": "Dunwqwq",
+      "email": "abcde@gmail.com"
+    },
+    {
+      "id": "3",
+      "password": "Qwerty13?",
+      "age": 30,
+      "name": "Acosta Robbins",
+      "email": "efgh@gmail.com"
+    },
+    {
+      "id": "4",
+      "password": "Qwerty1!",
+      "age": 18,
+      "name": "Zhanibek",
+      "email": "zkhodzhabekov@gmail.com"
+    },
+    {
+      "id": "5",
+      "password": "Wwerty1!",
+      "age": 15,
+      "name": "Mann",
+      "email": "mann@gmail.com"
+    }
+  ],
+  "animes":[
+    {
+      "id": "1",
+      "name": "Death Note",
+      "tags": ["shonen", "detective", "logics"],
+      "image": "deathnote.jpg",
+      "score": 9.6
+    },
+    {
+      "id": "2",
+      "name": "One Piece",
+      "tags": ["shonen", "adventure", "fantasy"],
+      "image": "deathnote.jpg",
+      "score": 9.4
+    },
+    {
+      "id": "3",
+      "name": "Bleach",
+      "tags": ["shonen", "adventure", "fantasy"],
+      "image": "deathnote.jpg",
+      "score": 9.8
+    },
+    {
+      "id": "4",
+      "name": "Oregairu",
+      "tags": ["romantics", "school"],
+      "image": "deathnote.jpg",
+      "score": 7.9
+    },
+    {
+      "id": "5",
+      "name": "Charlotte",
+      "tags": ["romantics", "fantasy"],
+      "image": "deathnote.jpg",
+      "score": 8.7
+    }
+  ]
+}

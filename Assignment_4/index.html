@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="style/style.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+	integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+	<title>OniMex - Watch for free</title>
+</head>
+<body lang="en">
+
+	<header>
+		<div class="popup">
+			<h1>Onimex</h1>
+			<ul>
+				<li><a href="pages/login.html">Login</a></li>
+				<li><a href="pages/register.html">Register</a></li>
+			</ul>
+		</div>
+		<nav class="nav_class ">
+			<a href="pages/home.html">Home</a>
+			<a href="pages/topanime.html">Top Anime</a>
+			<a href="pages/sound.html">Soundtracks</a>
+			 <!-- <a href="pages/categ.html">Categories</a>
+			<a href="pages/about.html">About Us</a> -->
+		</nav>
+	</header>
+	<div class="content">
+		<button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo">Simple collapsible</button>
+		  <div id="demo" class="collapse">
+		    <p>Anime (Japanese: アニメ, IPA: [aɲime] (About this soundlisten)) is hand-drawn and computer animation originating from Japan. In Japanese, anime, a term derived from the English word animation, describes all animated works, regardless of style or origin. Outside of Japan, anime refers specifically to animation produced in Japan, or to its common style, which has since been adopted by a minority of works produced in other countries.[1]</p>
+		  </div>
+
+		<br>
+		<br>
+		<br>
+		<br>
+		<p>Onimex - site which was created for watching free online anime and spread it.</p>
+		<script type="text/javascript">
+			fetch("db.json")
+			.then(response => response.json())
+			.then(data =>{
+				console.log(data)
+			})
+		</script>
+		<div class="s">
+			<input id="animesearch" type="text" placeholder="Type name of anime">
+			<button type="submit" onclick="search()">Search</button>
+		</div>
+		<!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script> -->
+	</div>
+
+</body>
+</html>

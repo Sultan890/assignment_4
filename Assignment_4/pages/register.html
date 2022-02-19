@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+	integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="style/style.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>OniMex - Watch for free</title>
+	<link type="text/javascript" src="backend.js">
+</head>
+<body lang="en">
+
+	<header>
+		<div class="popup">
+
+			<h1>Onimex</h1>
+			<ul>
+				<li><a href="login.html">Login</a></li>
+				<li><a href="register.html">Register</a></li>
+			</ul>
+		</div>
+		<nav class="nav_class ">
+			<a href="home.html">Home</a>
+			<a href="topanime.html">Top Anime</a>
+			<a href="sound.html">Soundtracks</a>
+			<!-- <a href="categ.html">Categories</a>
+			<a href="about.html">About Us</a> -->
+		</nav>
+	</header>
+	<div class="content">
+		<form id="main-form" method="post">
+      <label for="name"> Name:</label>
+      <input type="text" name="name" placeholder="Name" id="name"><br>
+      <br> <label for="name"> Surname:</label>
+      <input type="text" name="surname" placeholder="Surname" id="surname"><br>
+    <br>  <label for="name"> Password:</label>
+      <input type="password" name="password" placeholder="Password" id="posswrod"><br>
+      <br>  <label for="name" style="margin-top: 10px"> Сonfirm your password:</label>
+        <input type="password" name="repass" placeholder="Password" id="reposs">
+     <div id="error" style="color:red"></div>
+    <!-- <br>  <input type="submit" name="submit" value="Regist!"> -->
+		 <button type="submit" onclick="Regist()">Regist</button>
+    </form>
+    <style>
+div {
+    box-sizing: border-box;
+    width: 100%;
+    float: left;
+    align-content: center;
+    align-items: center;
+}
+
+form {
+    margin: 0 auto;
+    width: 600px;
+}</style>
+<script>
+document.getElementById('main-form').addEventListener("submit", checkFrom);
+
+function checkFrom(event) {
+event.preventDefault();
+var el =document.getElementById('main-form');
+
+var name = el.name.value;
+var surname = el.surname.value;
+var pass = el.password.value;
+var repass = el.repass.value;
+
+// console.log(name + " " + surname + " " + pass);
+var fail = "";
+
+if (name == ""||surname =="" || pass=="") {
+  fail = "fill out the form";
+}
+else if (name.length <= 1 || name.length > 50) {
+  fail = "enter the correct name";
+}
+else if (repass != pass) {
+  fail = "the password must match";
+}
+else if (pass.split("&").length > 1) {
+  fail = "invalid password";
+}
+
+if (fail != "") {
+  document.getElementById('error').innerHTML = fail;
+
+}
+else {
+alert("all data is filled in correctly");
+
+}
+
+}
+</script>
+	</div>
+</body>
+</html>
